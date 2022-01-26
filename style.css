@@ -21,6 +21,14 @@
                         padding-right: 10px;
                     }
                     
+                    .hamburger i {
+                        display: none;
+                    }
+                    /* .ham,
+                    .time {
+                        display: none;
+                    } */
+                    
                     .logo {
                         color: white;
                         font-size: 35px;
@@ -35,15 +43,17 @@
                     nav ul li {
                         list-style-type: none;
                         display: inline-block;
-                        padding: 30px 80px;
+                        padding: 30px 50px;
                     }
                     
                     nav ul li a {
                         color: ivory;
                         text-decoration: none;
                         font-size: 20px;
-                        font-family: 'Playfair Display', serif;
-                        letter-spacing: 2px;
+                        font-family: 'Staatliches', cursive;
+                        letter-spacing: 4px;
+                        font-weight: bold;
+                        text-transform: uppercase;
                     }
                     
                     nav ul li a:hover {
@@ -163,4 +173,119 @@
                         tranform: translateY(50%);
                         border-radius: 50%;
                         box-shadow: 0 0 10px black;
+                    }
+                    /* ====================================RESPONSIVE =================================== */
+                    /* FOR 1080px */
+                    
+                    @media (max-width: 1080px) {
+                        .logo {
+                            margin-top: 10rem;
+                            margin-left: 12rem;
+                        }
+                        .wrapper {
+                            height: 200vh;
+                            width: 100vw;
+                        }
+                        .content {
+                            margin-top: 500px;
+                            margin-right: 4rem;
+                        }
+                        .btn {
+                            position: absolute;
+                            bottom: 50%;
+                            left: 19%;
+                        }
+                        nav ul li {
+                            list-style-type: none;
+                            display: inline-block;
+                            padding: 20px 20px;
+                        }
+                        nav ul li a {
+                            position: relative;
+                            color: ivory;
+                            text-decoration: none;
+                            font-size: 20px;
+                            font-family: 'Staatliches', cursive;
+                            letter-spacing: 1px;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            top: 6rem;
+                        }
+                        img {
+                            position: absolute;
+                            bottom: 30;
+                            left: 60px;
+                            top: 20.5rem;
+                            width: 200px;
+                            height: 450px;
+                            border-radius: 50%;
+                            box-shadow: 0 0 10px black;
+                        }
+                    }
+                    /* ====================FOR 768px======================================= */
+                    
+                    @media (max-width: 768px) {
+                        nav ul li {
+                            display: none;
+                        }
+                        .logo {
+                            margin-top: 10rem;
+                            margin-left: 12rem;
+                        }
+                        .wrapper {
+                            height: 200vh;
+                            width: 100vw;
+                        }
+                        .content {
+                            margin-top: 500px;
+                            margin-right: 4rem;
+                        }
+                        .btn {
+                            position: absolute;
+                            bottom: 50%;
+                            left: 34%;
+                        }
+                        img {
+                            position: absolute;
+                            bottom: 30;
+                            left: 60px;
+                            top: 20.5rem;
+                            width: 200px;
+                            height: 450px;
+                            border-radius: 50%;
+                            box-shadow: 0 0 10px black;
+                        }
+                    }
+                    
+                    @media (max-width: 578px) {
+                        nav ul li {
+                            display: none;
+                        }
+                        .logo {
+                            margin-top: 10rem;
+                            margin-left: 12rem;
+                        }
+                        .wrapper {
+                            height: 200vh;
+                            width: 150vw;
+                        }
+                        .content {
+                            margin-top: 500px;
+                            margin-right: 4rem;
+                        }
+                        .btn {
+                            position: absolute;
+                            bottom: 50%;
+                            left: 34%;
+                        }
+                        img {
+                            position: absolute;
+                            bottom: 30;
+                            left: 60px;
+                            top: 20.5rem;
+                            width: 200px;
+                            height: 450px;
+                            border-radius: 50%;
+                            box-shadow: 0 0 10px black;
+                        }
                     }
